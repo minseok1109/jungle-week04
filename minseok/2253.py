@@ -12,6 +12,8 @@ for _ in range(M):
 for i in range(2, N + 1):
     if i in stone_set:
         continue
+    # i번째 돌에서 x가 j일 때 j - 1, j, j + 1을 확인하여
+    # i번째 돌에 갈 수 있는 최소 점프 횟수의 + 1
     for j in range(1, int((2 * i) ** 0.5) + 1):
         dp[i][j] = min(dp[i - j][j - 1], dp[i - j][j], dp[i - j][j + 1]) + 1
 
