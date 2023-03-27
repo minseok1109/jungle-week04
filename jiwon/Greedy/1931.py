@@ -8,8 +8,7 @@ n = int(input())
 meetings = [list(map(int, input().split())) for _ in range(n)]
 
 # 끝나는 시간, 시작 시간 순으로 정렬 (오름차순)
-meetings = sorted(meetings, key = lambda a : a[0])
-meetings = sorted(meetings, key = lambda a : a[1])
+meetings = sorted(meetings, key = lambda a : (a[1], a[0]))
 
 # 최대 회의 개수 저장
 count = 0
