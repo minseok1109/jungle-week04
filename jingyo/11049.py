@@ -6,6 +6,7 @@ n = int(input())
 mat = [list(map(int, input().split())) for i in range(n)]
 
 dp = [[0]*n for i in range(n)]
+
 for cnt in range(n-1):
     for i in range(n-1-cnt):
         j = i+cnt+1

@@ -6,6 +6,7 @@ a = str(input().rstrip())
 b = str(input().rstrip())
 len_a = len(a)
 len_b = len(b)
+
 dt = [[0]*(len_a+1) for _ in range(len_b+1)]
 
 for i in range(1,len_b+1):
