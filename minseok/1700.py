@@ -29,6 +29,7 @@ for i in range(K):
         elif use[i:].index(plug) > far_one:
             far_one = use[i:].index(plug)
             temp = plug
+    # 찾은 플러그 빼고  그  다음  플러그  꼽기
     plugs[plugs.index(temp)] = use[i]
     result += 1
 
