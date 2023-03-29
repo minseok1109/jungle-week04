@@ -1,3 +1,4 @@
+# ^ T^F = T, F^T=T, T^T=F, F^F=F
 import sys
 
 input = sys.stdin.readline
